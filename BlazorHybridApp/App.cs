@@ -23,7 +23,8 @@ namespace BlazorHybridApp
                     services.AddBlazorHybrid();
 
                     // Register app-specific services
-                    services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://10.0.2.2:9816") });
+                    // You can not use IIS, you must use kestral
+                    services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://10.0.2.2:5000") });
                     services.AddSingleton<CounterState>();
                 })
                 .Build();
