@@ -23,7 +23,7 @@ namespace BlazorHybridApp
 
                     // Register app-specific services
                     services.AddSingleton<CounterState>();
-                    services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://10.0.2.2:9816") });
+                    services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://10.0.2.2:9816/") });
                 })
                 .UseWebRoot("wwwroot");
 
