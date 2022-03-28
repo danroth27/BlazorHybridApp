@@ -1,2 +1,3 @@
-# BlazorHybridApp
-Blazor hybrid with Mobile Blazor Bindings
+# Blazor Hybrid app
+
+A Blazor Hybrid app based on .NET MAUI using components shared with a Blazor web app.
